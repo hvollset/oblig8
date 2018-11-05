@@ -22,8 +22,11 @@ class Regneklynge:
         pass
 
     def noder_med_nok_minne(self, paakrevd_minne):
+        node_count = 0
         for rack in self._racks:
-            rack.noder_med_nok_minne(paakrevd_minne)
+            count = rack.noder_med_nok_minne(paakrevd_minne)
+            node_count += count
+        return node_count
 
     def ant_racks(self):
         pass
