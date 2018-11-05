@@ -1,6 +1,3 @@
-from node import Node
-
-
 class Rack:
     def __init__(self):
         self._noder = []
@@ -22,5 +19,4 @@ class Rack:
         for node in self._noder:
             if node.nok_minne(paakrevd_minne):
                 gode_noder += 1
-            else:
-                gode_noder += 0
+        return gode_noder
